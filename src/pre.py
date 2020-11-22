@@ -1,5 +1,4 @@
 import os
-import pandas as pd
 from operator import itemgetter
 from nltk.corpus import stopwords
 
@@ -23,9 +22,8 @@ def main():
     #     for directory, subdirectory, filenames in os.walk(path):
     #         for filename in filenames:
     #             freq_analysis(os.path.join(directory, filename), people_dict)
-    #     pd.DataFrame(people_dict).to_csv('output/count/' + people + '.csv', orient='index', header=False, sep=' ')
-    #     # with open('output/count/' + people + '.csv', 'w') as f:
-    #         # [f.write('{0} {1}\n'.format(key, value)) for key, value in people_dict.items()]
+    #     with open('output/count/' + people + '.csv', 'w') as f:
+    #         [f.write('{0} {1}\n'.format(key, value)) for key, value in people_dict.items()]
     # dictionary = dict()
     # rootdir = 'output/count'
     # count = 0
